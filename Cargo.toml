@@ -1,0 +1,13 @@
+[package]
+name = "jparse"
+version = "0.1.0"
+edition = "2021"
+description = "A Jpeg parser written in Rust"
+
+
+[dependencies]
+nom = "7.1.1"
+nom-bufreader = { version = "0.2.0", optional = true }
+
+[features]
+bufreader = ["dep:nom-bufreader"]
